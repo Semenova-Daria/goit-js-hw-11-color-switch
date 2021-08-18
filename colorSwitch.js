@@ -34,5 +34,10 @@ function onStartClick() {
 function onStopClick() {
     clearInterval(intervalId);
     refs.startBtn.disabled = false;
+};
+
+function randomColor() {
+    return `rgb(${randomIntegerFromInterval(0, 255)},${randomIntegerFromInterval(0, 255)},
+    ${randomIntegerFromInterval(0, 255)})`
 }
 
